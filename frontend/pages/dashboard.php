@@ -24,7 +24,14 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
+                <!-- sidebar -->
+            <div class="col-md-4">
+                <?php 
+                include_once(__DIR__ . '/../layouts/partials/sidebar.php');
+                ?>
+            </div>
+                <!-- end sidebar -->
+            <div class="col-md-8">
                 
               dhjkxhgiglk,dgkl
             </div>

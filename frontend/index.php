@@ -124,7 +124,7 @@ EOT;
                                     <?php if (!empty($sanpham['hsp_tentaptin'])) : ?>
                                         <div class="container-img">
                                             <a href="/shophoatuoi/frontend/sanpham/detail.php?sp_ma=<?= $sanpham['sp_ma'] ?>">
-                                                <img class="bd-placeholder-img card-img-top img-fluid" width="100%" height="350" src="/shophoatuoi/assets/shared/img/<?= $sanpham['hsp_tentaptin'] ?>" />
+                                                <img class="bd-placeholder-img card-img-top img-fluid" width="100%" height="350px" src="/shophoatuoi/assets/shared/img/<?= $sanpham['hsp_tentaptin'] ?>" />
                                             </a>
                                         </div>
                                         <!-- Nếu không có hình sản phẩm thì hiển thị ảnh mặc định -->

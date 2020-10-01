@@ -9,7 +9,7 @@ if (session_id() === '') {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NenTang.vn</title>
+    <title>Shophoatuoi.vn</title>
 
     <!-- Nhúng file Quản lý các Liên kết CSS dùng chung cho toàn bộ trang web -->
     <?php include_once(__DIR__ . '/layouts/styles.php'); ?>
@@ -20,6 +20,7 @@ if (session_id() === '') {
             object-fit: cover;
         }
     </style>
+    <link href="/shophoatuoi/assets/frontend/css/styles.css" type="text/css" rel="stylesheet"/>
 </head>
 
 <body class="d-flex flex-column h-100">
@@ -54,13 +55,13 @@ if (session_id() === '') {
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                        <img class="d-block w-100" src="/shophoatuoi/assets/shared/img/barnerhd1.png" alt="First slide" height="300px">
+                        <img class="d-block w-100" src="/shophoatuoi/assets/shared/img/barnerhd3.png" alt="First slide" height="300px">
                         </div>
                         <div class="carousel-item">
                         <img class="d-block w-100" src="/shophoatuoi/assets/shared/img/barnerhd2.png" alt="Second slide" height="300px">
                         </div>
                         <div class="carousel-item">
-                        <img class="d-block w-100" src="/shophoatuoi/assets/shared/img/barnerhd3.png" alt="Third slide" height="300px">
+                        <img class="d-block w-100" src="/shophoatuoi/assets/shared/img/barnerhd1.png" alt="Third slide" height="300px">
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -124,14 +125,14 @@ EOT;
                                     <?php if (!empty($sanpham['hsp_tentaptin'])) : ?>
                                         <div class="container-img">
                                             <a href="/shophoatuoi/frontend/sanpham/detail.php?sp_ma=<?= $sanpham['sp_ma'] ?>">
-                                                <img class="bd-placeholder-img card-img-top img-fluid" width="100%" height="350px" src="/shophoatuoi/assets/shared/img/<?= $sanpham['hsp_tentaptin'] ?>" />
+                                                <img class="bd-placeholder-img card-img-top img-fluid hdd" width="100%" src="/shophoatuoi/assets/shared/img/<?= $sanpham['hsp_tentaptin'] ?>" />
                                             </a>
                                         </div>
                                         <!-- Nếu không có hình sản phẩm thì hiển thị ảnh mặc định -->
                                     <?php else : ?>
                                         <div class="container-img">
                                             <a href="/shophoatuoi/frontend/sanpham/detail.php?sp_ma=<?= $sanpham['sp_ma'] ?>">
-                                                <img class="bd-placeholder-img card-img-top img-fluid" width="100%" height="350" src="/shophoatuoi/assets/shared/img/default.png" />
+                                                <img class="bd-placeholder-img card-img-top img-fluid hdd" width="100%" src="/shophoatuoi/assets/shared/img/default.png" />
                                             </a>
                                         </div>
                                     <?php endif; ?>

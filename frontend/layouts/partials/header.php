@@ -6,7 +6,7 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="/php/myhand/frontend/index.php">Trang chủ Frontend</a>
+        <a class="nav-link" href="/shophoatuoi/frontend/index.php">Trang chủ Frontend</a>
       </li>
     </ul>
     <ul class="navbar-nav px-3 ml-auto">
@@ -18,11 +18,11 @@
           <a class="nav-link">Chào <?= $_SESSION['kh_tendangnhap_logged']; ?></a>
         </li>
         <li class="nav-item text-nowrap">
-          <a class="nav-link" href="/php/myhand/backend/auth/logout.php">Đăng xuất</a>
+          <a class="nav-link" href="/shophoatuoi/frontend/auth/dangxuat.php">Đăng xuất</a>
         </li>
       <?php else : ?>
         <li class="nav-item text-nowrap">
-          <a class="nav-link" href="/php/myhand/backend/auth/login.php">Đăng nhập</a>
+          <a class="nav-link" href="/shophoatuoi/frontend/auth/dangnhap.php">Đăng nhập</a>
         </li>
       <?php endif; ?>
     </ul>

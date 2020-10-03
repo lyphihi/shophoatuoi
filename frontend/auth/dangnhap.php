@@ -94,8 +94,8 @@ if (session_id() === '') {
                     // Chưa đăng nhập -> Xử lý logic/nghiệp vụ kiểm tra Tài khoản và Mật khẩu trong database
                     if (isset($_POST['btnLogin'])) {
                         // Phân tách thông tin từ người dùng gởi đến qua Request POST
-                        $kh_tendangnhap = $_POST['kh_tendangnhap'];
-                        $kh_matkhau = $_POST['kh_matkhau'];
+                        $kh_tendangnhap = addslashes($_POST['kh_tendangnhap']);
+                        $kh_matkhau = addslashes($_POST['kh_matkhau']);
                         // Câu lệnh SELECT Kiểm tra đăng nhập...
                         $sqlSelect = <<<EOT
                         SELECT *

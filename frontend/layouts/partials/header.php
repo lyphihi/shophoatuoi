@@ -15,7 +15,10 @@
       if (isset($_SESSION['kh_tendangnhap_logged']) && !empty($_SESSION['kh_tendangnhap_logged'])) :
       ?>
         <li class="nav-item text-nowrap">
-          <a class="nav-link">Chào <?= $_SESSION['kh_tendangnhap_logged']; ?></a>
+          <a  class="nav-link" href="/shophoatuoi/frontend/thanhtoan/giohang.php">Giỏ hàng</a>
+        </li>
+        <li class="nav-item text-nowrap">
+          <a class="nav-link">Chào <?= $_SESSION['kh_tendangnhap_logged'] ?></a>
         </li>
         <li class="nav-item text-nowrap">
           <a class="nav-link" href="/shophoatuoi/frontend/auth/dangxuat.php">Đăng xuất</a>

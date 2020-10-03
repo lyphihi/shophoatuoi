@@ -409,8 +409,8 @@ EOT;
                                     <input type="number" class="form-control" id="soluong" name="soluong">
                                 </div>
                                 <div class="action">
-                                    <a class="add-to-cart btn btn-default" id="btnThemVaoGioHang">Thêm vào giỏ hàng</a>
-                                    <a href="#"><img src="/shophoatuoi/assets/shared/img/giohang1.png" height="50px" width="50px"/></a>
+                                    <a href="/shophoatuoi/frontend/thanhtoan/giohang.php" class="add-to-cart btn btn-default" id="btnThemVaoGioHang">Thêm vào giỏ hàng</a>
+                                    <a href="/shophoatuoi/frontend/thanhtoan/giohang.php"><img src="/shophoatuoi/assets/shared/img/giohang1.png" height="50px" width="50px"/></a>
                                     <!--<a class="like btn btn-default" href="#"><span class="fa fa-heart"></span></a>-->
                                 </div>
                             </div>

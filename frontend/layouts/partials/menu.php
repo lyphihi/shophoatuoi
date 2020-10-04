@@ -10,12 +10,12 @@
           Chủ đề
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Hoa sinh nhật</a>
-          <a class="dropdown-item" href="#">Hoa tốt nghiệp</a>
-          <a class="dropdown-item" href="#">Hoa tình yêu</a>
-          <a class="dropdown-item" href="#">Hoa tặng mẹ</a>
-          <a class="dropdown-item" href="#">Hoa ngày lễ</a>
-          <a class="dropdown-item" href="#">Hoa cưới</a>
+          <a class="dropdown-item" href="/shophoatuoi/frontend/chude/sinhnhat.php">Hoa sinh nhật</a>
+          <a class="dropdown-item" href="/shophoatuoi/frontend/chude/tangme.php">Hoa tặng mẹ</a>
+          <a class="dropdown-item" href="/shophoatuoi/frontend/chude/hoacuoi.php">Hoa cưới</a>
+          <a class="dropdown-item" href="/shophoatuoi/frontend/chude/hoacuoi.php">Hoa ngày lễ</a>
+          <a class="dropdown-item" href="/shophoatuoi/frontend/chude/hoacuoi.php">Hoa tốt nghiệp</a>
+          <a class="dropdown-item" href="/shophoatuoi/frontend/chude/hoacuoi.php">Hoa tình yêu</a>
         </div>
       </li>
       <li class="nav-item dropdown">
@@ -23,10 +23,10 @@
           Loại hoa
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Hoa Cẩm tú cầu</a>
-          <a class="dropdown-item" href="#">Hoa Hông</a>
-          <a class="dropdown-item" href="#">Hoa Ly</a>
-          <a class="dropdown-item" href="#">Hoa cúc</a>
+          <a class="dropdown-item" href="/shophoatuoi/frontend/loaihoa/camtucau.php">Hoa Cẩm tú cầu</a>
+          <a class="dropdown-item" href="/shophoatuoi/frontend/loaihoa/hoahong.php">Hoa Hông</a>
+          <a class="dropdown-item" href="/shophoatuoi/frontend/loaihoa/hoahong.php">Hoa Ly</a>
+          <a class="dropdown-item" href="/shophoatuoi/frontend/loaihoa/hoahong.php">Hoa cúc</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="#">Các loại hoa khác</a>
         </div>

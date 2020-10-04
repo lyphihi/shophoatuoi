@@ -1,11 +1,11 @@
 <div class="container">
   <h3>Danh sách</h3>
     <ul class="list-group">
-      <li class="list-group-item list-group-item-primary">Hoa cẩm tú cầu</li>
-      <li class="list-group-item list-group-item-secondary">Hoa cúc</li>
-      <li class="list-group-item list-group-item-success">Hoa hồng</li>
-      <li class="list-group-item list-group-item-info">Hoa hướng dương</li>
-      <li class="list-group-item list-group-item-warning">Hoa lan</li>
+      <li class="list-group-item list-group-item-primary"><a href="/shophoatuoi/frontend/loaihoa/camtucau.php">Hoa cẩm tú cầu</a></li>
+      <li class="list-group-item list-group-item-secondary"><a href="/shophoatuoi/frontend/loaihoa/camtucau.php">Hoa cúc</a></li>
+      <li class="list-group-item list-group-item-success"><a href="/shophoatuoi/frontend/loaihoa/hoahong.php">Hoa hồng</a></li>
+      <li class="list-group-item list-group-item-info"><a href="/shophoatuoi/frontend/loaihoa/hoahong.php">Hoa hướng dương</a></li>
+      <li class="list-group-item list-group-item-warning"><a href="/shophoatuoi/frontend/loaihoa/hoahong.php">Hoa lan</a></li>
     </ul>
 </div>
 <?php 

@@ -17,7 +17,10 @@ if (session_id() === '') {
         .homepage-slider-img {
             width: 100%;
             height: 450px;
-            object-fit: cover;
+            object-fit: cover; 
+        }
+        .d-flex {
+            overflow-x:hidden;
         }
     </style>
     <link href="/shophoatuoi/assets/frontend/css/styles.css" type="text/css" rel="stylesheet"/>

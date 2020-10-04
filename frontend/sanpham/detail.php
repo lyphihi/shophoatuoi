@@ -13,7 +13,7 @@ if (session_id() === '') {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NenTang.vn</title>
+    <title>Chi tiết sản phẩm</title>
 
     <!-- Nhúng file Quản lý các Liên kết CSS dùng chung cho toàn bộ trang web -->
     <?php include_once(__DIR__ . '/../layouts/styles.php'); ?>
@@ -258,9 +258,9 @@ if (session_id() === '') {
         // Hiển thị tất cả lỗi trong PHP
         // Chỉ nên hiển thị lỗi khi đang trong môi trường Phát triển (Development)
         // Không nên hiển thị lỗi trên môi trường Triển khai (Production)
-        ini_set('display_errors', 1);
-        ini_set('display_startup_errors', 1);
-        error_reporting(E_ALL);
+        // ini_set('display_errors', 1);
+        // ini_set('display_startup_errors', 1);
+        // error_reporting(E_ALL);
 
         // Truy vấn database
         // 1. Include file cấu hình kết nối đến database, khởi tạo kết nối $conn
@@ -465,14 +465,14 @@ EOT;
                     $('#thongbao').html(htmlString);
                     // Hiện thông báo
                     $('.alert').removeClass('d-none').addClass('show');
-                },
-                error: function(jqXHR, textStatus, errorThrown) {
-                    console.log(textStatus, errorThrown);
+                 },
+                 error: function(jqXHR, textStatus, errorThrown) {
+                     console.log(textStatus, errorThrown);
                     var htmlString = `<h1>Không thể xử lý</h1>`;
                     $('#thongbao').html(htmlString);
-                    // Hiện thông báo
-                    $('.alert').removeClass('d-none').addClass('show');
-                }
+                     // Hiện thông báo
+                     $('.alert').removeClass('d-none').addClass('show');
+                    }
             });
         };
 

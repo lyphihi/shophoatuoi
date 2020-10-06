@@ -32,7 +32,7 @@ if (isset($_SESSION['giohangdata'])) {
 
     // lưu dữ liệu giỏ hàng vào session
     $_SESSION['giohangdata'] = $data;
-} else { // Nếu khách hàng đặt hàng sản phẩm chưa có trong giỏ hàng => thêm vào
+} else{ // Nếu khách hàng đặt hàng sản phẩm chưa có trong giỏ hàng => thêm vào
     $data[$sp_ma] = array(
         'sp_ma' => $sp_ma,
         'sp_ten' => $sp_ten,

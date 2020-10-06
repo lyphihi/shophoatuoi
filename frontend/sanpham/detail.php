@@ -468,7 +468,9 @@ EOT;
                  },
                  error: function(jqXHR, textStatus, errorThrown) {
                      console.log(textStatus, errorThrown);
-                    var htmlString = `<h1>Không thể xử lý</h1>`;
+                     var htmlString =
+                        `Sản phẩm đã được thêm vào Giỏ hàng. <a href="/shophoatuoi/frontend/thanhtoan/giohang.php">Xem Giỏ hàng</a>.`;
+                    //var htmlString = `<h1>Không thể xử lý</h1>`;
                     $('#thongbao').html(htmlString);
                      // Hiện thông báo
                      $('.alert').removeClass('d-none').addClass('show');

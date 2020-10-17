@@ -100,7 +100,7 @@ if (session_id() === '') {
                         $sqlSelect = <<<EOT
                         SELECT *
                         FROM khachhang kh
-                        WHERE kh.kh_tendangnhap = '$kh_tendangnhap' AND kh.kh_matkhau = '$kh_matkhau';
+                        WHERE kh.kh_tendangnhap = '$kh_tendangnhap' AND kh.kh_matkhau = '$kh_matkhau' ;
 EOT;
                         // Thực thi SELECT
                         $result = mysqli_query($conn, $sqlSelect);
@@ -109,9 +109,15 @@ EOT;
                         if (mysqli_num_rows($result) > 0) {
                             // Lưu thông tin Tên tài khoản user đã đăng nhập
                             $_SESSION['kh_tendangnhap_logged'] = $kh_tendangnhap;
+                            //$_SESSION['quyen_han'] = $row['kh_quantri'];
                             echo 'Đăng nhập thành công!';
                             // Điều hướng (redirect) về trang chủ
-                            echo '<script>location.href = "/shophoatuoi/frontend/";</script>';
+                            if ($_SESSION['kh_tendangnhap_logged'] == 'admin') {
+                                echo '<script>location.href = "/shophoatuoi/backend/index.php";</script>';
+                            }
+                            else {
+                                echo '<script>location.href = "/shophoatuoi/frontend/";</script>';
+                            }
                         } else {
                             echo '<h2 style="color: red;">Đăng nhập thất bại!</h2>';
                         }

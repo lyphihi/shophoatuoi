@@ -43,12 +43,12 @@ if (session_id() === '') {
         <?php
         include_once(__DIR__ . '/../../dbconnect.php');
         $sqlDanhSachSanPham = <<<EOT
-        SELECT sp.sp_ma, sp.sp_ten, sp.sp_gia, sp.sp_giacu, sp.sp_motangan, sp.sp_soluong, cd.cd_ten, lsp.lsp_ten, MAX(hsp.hsp_tentaptin) AS hsp_tentaptin
+        SELECT sp.sp_ma, sp.sp_ten, sp.sp_gia, sp.sp_giacu, sp.sp_motangan, sp.sp_soluong, lsp.lsp_ten, MAX(hsp.hsp_tentaptin) AS hsp_tentaptin
         FROM `sanpham` sp
         JOIN `loaisanpham` lsp ON sp.lsp_ma = lsp.lsp_ma
         JOIN `chudehoa` cd ON sp.cd_ma = cd.cd_ma
         LEFT JOIN `hinhsanpham` hsp ON sp.sp_ma = hsp.sp_ma
-        where cd.cd_ma=2
+        where lsp.lsp_ma=2 and lsp.lsp_ma=6 and lsp.lsp_ma=8 and lsp.lsp_ma=9 and lsp.lsp_ma=10
         GROUP BY sp.sp_ma, sp.sp_ten, sp.sp_gia, sp.sp_giacu, sp.sp_motangan, sp.sp_soluong, cd.cd_ten;
 EOT;
         $result = mysqli_query($conn, $sqlDanhSachSanPham);
@@ -67,15 +67,16 @@ EOT;
         }
 
         ?>
-            <section class="jumbotron text-center">
             <div class="container">
-                <h3 class="jumbotron-heading">Hoa dành tặng mẹ</h3>
-                <p>
-                "Con chẳng thể cho mẹ những điều lớn lao nhưng con muốn mẹ biết một điều là cảm ơn vì đã là người mẹ xinh đẹp và chu đáo nhất của con".
-                Bạn đang tìm một bó hoa dành tặng mẹ thật đẹp? Hãy để shop hoa tươi thay bạn thiết kế món quà độc đáo và thay bạn gửi đến mẹ một sự ấn tượng, bất ngờ.
-                </p>
+                <div class="row">
+                    <div class="col-md-4"><img src="/shophoatuoi/assets/shared/img/camtu_hoacuoi.png" width="350px" height="350px"></div>
+                    <div class="col-md-8">
+                        <h3>Cẩm tú cầu</h3>
+                        <p>Cẩm tú cầu thường nở rộ từ tháng 5 đến cuối năm, có các sắc màu nhẹ nhàng, trong sáng như màu trắng, xanh, hồng nhạt, mầu tím.Điều đặc biệt ở hoa cẩm tú cầu là màu sắc của hoa phụ thuộc vào độ pH của đất. Nếu đất có độ pH là 7 thì cây cho hoa màu trắng sữa, nếu đất có độ pH lớn hơn 7 thì cây cho hoa màu hồng hoặc màu tím, và nếu độ pH nhỏ hơn 7 thì cây sẽ cho hoa màu lam.</p>
+                        <p>Chính vì vậy, có thể điều chỉnh màu hoa thông qua việc điều chỉnh độ pH của đất trồng. (Muốn hoa có màu lam vào mùa hè thu bón dung dịch clorua sắt hay có thể chôn vài cây đinh gỉ vào gốc cây, cũng có thể chôn vào đất một ít clorua nhôm, clorua magie. Muốn hoa có màu hồng có thể bón vào đất một ít vôi bột.)</p>
+                    </div>
+                </div>
             </div>
-            </section>
 
         <!-- Giải thuật duyệt và render Danh sách sản phẩm theo dòng, cột của Bootstrap -->
         <div class="sanphams py-5 bg-light">

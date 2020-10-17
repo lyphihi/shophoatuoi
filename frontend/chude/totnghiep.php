@@ -48,7 +48,7 @@ if (session_id() === '') {
         JOIN `loaisanpham` lsp ON sp.lsp_ma = lsp.lsp_ma
         JOIN `chudehoa` cd ON sp.cd_ma = cd.cd_ma
         LEFT JOIN `hinhsanpham` hsp ON sp.sp_ma = hsp.sp_ma
-        where cd.cd_ma=2
+        where cd.cd_ma=5
         GROUP BY sp.sp_ma, sp.sp_ten, sp.sp_gia, sp.sp_giacu, sp.sp_motangan, sp.sp_soluong, cd.cd_ten;
 EOT;
         $result = mysqli_query($conn, $sqlDanhSachSanPham);
@@ -69,10 +69,9 @@ EOT;
         ?>
             <section class="jumbotron text-center">
             <div class="container">
-                <h3 class="jumbotron-heading">Hoa dành tặng mẹ</h3>
+                <h3 class="jumbotron-heading">Hoa dành tặng cho lễ tốt nghiệp</h3>
                 <p>
-                "Con chẳng thể cho mẹ những điều lớn lao nhưng con muốn mẹ biết một điều là cảm ơn vì đã là người mẹ xinh đẹp và chu đáo nhất của con".
-                Bạn đang tìm một bó hoa dành tặng mẹ thật đẹp? Hãy để shop hoa tươi thay bạn thiết kế món quà độc đáo và thay bạn gửi đến mẹ một sự ấn tượng, bất ngờ.
+                Lễ tốt nghiệp là một trong những dịp quan trọng của các sinh viên, đánh dấu bước tiến lớn trong cuộc đời mỗi người sau thời gian được đào tạo ở trường. Vào dịp này ai cũng muốn gửi đến những cử nhân những bông hoa rực rỡ, tươi đẹp để mang đến niềm vui, hạnh phúc cũng như lời chúc mừng đến họ. Bạn muốn tặng cho anh, chị, em hay bạn bè một bó hoa thật đẹp và ý nghĩa nhưng lại chưa biết nên tặng hoa gì vào lễ tốt nghiệp? Dưới đây là những bó hoa phù hợp để tặng vào ngày lễ tốt nghiệp mà shop hoa tươi gợi ý cho bạn.
                 </p>
             </div>
             </section>

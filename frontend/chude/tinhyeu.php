@@ -48,7 +48,7 @@ if (session_id() === '') {
         JOIN `loaisanpham` lsp ON sp.lsp_ma = lsp.lsp_ma
         JOIN `chudehoa` cd ON sp.cd_ma = cd.cd_ma
         LEFT JOIN `hinhsanpham` hsp ON sp.sp_ma = hsp.sp_ma
-        where cd.cd_ma=2
+        where cd.cd_ma=3
         GROUP BY sp.sp_ma, sp.sp_ten, sp.sp_gia, sp.sp_giacu, sp.sp_motangan, sp.sp_soluong, cd.cd_ten;
 EOT;
         $result = mysqli_query($conn, $sqlDanhSachSanPham);
@@ -69,10 +69,9 @@ EOT;
         ?>
             <section class="jumbotron text-center">
             <div class="container">
-                <h3 class="jumbotron-heading">Hoa dành tặng mẹ</h3>
+                <h3 class="jumbotron-heading">Hoa tình yêu</h3>
                 <p>
-                "Con chẳng thể cho mẹ những điều lớn lao nhưng con muốn mẹ biết một điều là cảm ơn vì đã là người mẹ xinh đẹp và chu đáo nhất của con".
-                Bạn đang tìm một bó hoa dành tặng mẹ thật đẹp? Hãy để shop hoa tươi thay bạn thiết kế món quà độc đáo và thay bạn gửi đến mẹ một sự ấn tượng, bất ngờ.
+                Hoa hồng là biểu tượng cho tình yêu đặc biệt đối với các mối quan hệ vừa chớm nở của các đôi lứa, một bó hoa hồng cũng thể hiện mong muốn một sự khởi đầu lãng mạn về một tình yêu. Chúng có thể gửi một thông điệp đầy hứa hẹn và một lời mời ngầm bày tỏ mong muốn cho tình cảm phát triển hơn và là loại hoa tượng trưng cho hạnh phúc.
                 </p>
             </div>
             </section>

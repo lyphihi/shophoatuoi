@@ -43,12 +43,12 @@ if (session_id() === '') {
         <?php
         include_once(__DIR__ . '/../../dbconnect.php');
         $sqlDanhSachSanPham = <<<EOT
-        SELECT sp.sp_ma, sp.sp_ten, sp.sp_gia, sp.sp_giacu, sp.sp_motangan, sp.sp_soluong, cd.cd_ten, lsp.lsp_ten, MAX(hsp.hsp_tentaptin) AS hsp_tentaptin
+        SELECT sp.sp_ma, sp.sp_ten, sp.sp_gia, sp.sp_giacu, sp.sp_motangan, sp.sp_soluong, lsp.lsp_ten, MAX(hsp.hsp_tentaptin) AS hsp_tentaptin
         FROM `sanpham` sp
         JOIN `loaisanpham` lsp ON sp.lsp_ma = lsp.lsp_ma
         JOIN `chudehoa` cd ON sp.cd_ma = cd.cd_ma
         LEFT JOIN `hinhsanpham` hsp ON sp.sp_ma = hsp.sp_ma
-        where cd.cd_ma=2
+        where lsp.lsp_ma=4
         GROUP BY sp.sp_ma, sp.sp_ten, sp.sp_gia, sp.sp_giacu, sp.sp_motangan, sp.sp_soluong, cd.cd_ten;
 EOT;
         $result = mysqli_query($conn, $sqlDanhSachSanPham);
@@ -67,15 +67,15 @@ EOT;
         }
 
         ?>
-            <section class="jumbotron text-center">
             <div class="container">
-                <h3 class="jumbotron-heading">Hoa dành tặng mẹ</h3>
-                <p>
-                "Con chẳng thể cho mẹ những điều lớn lao nhưng con muốn mẹ biết một điều là cảm ơn vì đã là người mẹ xinh đẹp và chu đáo nhất của con".
-                Bạn đang tìm một bó hoa dành tặng mẹ thật đẹp? Hãy để shop hoa tươi thay bạn thiết kế món quà độc đáo và thay bạn gửi đến mẹ một sự ấn tượng, bất ngờ.
-                </p>
+                <div class="row">
+                    <div class="col-md-4"><img src="/shophoatuoi/assets/shared/img/cuc_khonglo.png" width="350px" height="350px"></div>
+                    <div class="col-md-8">
+                        <h3>Hoa cúc</h3>
+                        <p>Hoa cúc - loài hoa được người ta yêu mến bởi vẻ mộc mạc, giản đơn và biết bao gần gũi. Không chỉ là nét ngây thơ trong sáng của những đóa cúc nhỏ nhắn, trắng xinh; mà còn là niềm vui tươi, rạng rỡ của những đóa cúc đa sắc màu...</p>
+                    </div>
+                </div>
             </div>
-            </section>
 
         <!-- Giải thuật duyệt và render Danh sách sản phẩm theo dòng, cột của Bootstrap -->
         <div class="sanphams py-5 bg-light">

@@ -13,11 +13,11 @@
         </a>
         <ul class="collapse" id="shop_categoriesSubMenu">
           <li class="nav-item">
-            <a href="/backend/functions/shop_categories/index.php">Danh sách</a>
+            <a href="/shophoatuoi/backend/index.php">Danh sách</a>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a href="/backend/functions/shop_categories/create.php">Thêm mới</a>
-          </li>
+          </li> -->
         </ul>
       </li>
       <!-- End Menu Chuyên mục sản phẩm -->
@@ -28,10 +28,10 @@
         </a>
         <ul class="collapse" id="sanphamSubMenu">
           <li class="nav-item">
-            <a href="/backend/functions/sanpham/index.php">Danh sách</a>
+            <a href="/shophoatuoi/backend/sanpham/index.php">Danh sách</a>
           </li>
           <li class="nav-item">
-            <a href="/backend/functions/sanpham/create.php">Thêm mới</a>
+            <a href="/shophoatuoi/backend/sanpham/create.php">Thêm mới</a>
           </li>
         </ul>
       </li>

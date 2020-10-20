@@ -36,6 +36,21 @@
         </ul>
       </li>
       <!-- End Sản phẩm -->
+      <!-- Menu  Hình sản phẩm-->
+      <li class="nav-item">
+        <a href="#sanphamSubMenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+          Hình sản phẩm
+        </a>
+        <ul class="collapse" id="sanphamSubMenu">
+          <li class="nav-item">
+            <a href="/shophoatuoi/backend/hinhsanpham/index.php">Danh sách</a>
+          </li>
+          <li class="nav-item">
+            <a href="/shophoatuoi/backend/hinhsanpham/create.php">Thêm mới</a>
+          </li>
+        </ul>
+      </li>
+      <!-- End Hình sản phẩm -->
       <!-- #################### End Menu chức năng Danh mục #################### -->
     </ul>
   </div>

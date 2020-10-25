@@ -13,11 +13,11 @@
         </a>
         <ul class="collapse" id="shop_categoriesSubMenu">
           <li class="nav-item">
-            <a href="/backend/functions/shop_categories/index.php">Danh sách</a>
+            <a href="/shophoatuoi/backend/index.php">Danh sách</a>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a href="/backend/functions/shop_categories/create.php">Thêm mới</a>
-          </li>
+          </li> -->
         </ul>
       </li>
       <!-- End Menu Chuyên mục sản phẩm -->
@@ -28,14 +28,29 @@
         </a>
         <ul class="collapse" id="sanphamSubMenu">
           <li class="nav-item">
-            <a href="/backend/functions/sanpham/index.php">Danh sách</a>
+            <a href="/shophoatuoi/backend/sanpham/index.php">Danh sách</a>
           </li>
           <li class="nav-item">
-            <a href="/backend/functions/sanpham/create.php">Thêm mới</a>
+            <a href="/shophoatuoi/backend/sanpham/create.php">Thêm mới</a>
           </li>
         </ul>
       </li>
       <!-- End Sản phẩm -->
+      <!-- Menu  Hình sản phẩm-->
+      <li class="nav-item">
+        <a href="#sanphamSubMenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+          Hình sản phẩm
+        </a>
+        <ul class="collapse" id="sanphamSubMenu">
+          <li class="nav-item">
+            <a href="/shophoatuoi/backend/hinhsanpham/index.php">Danh sách</a>
+          </li>
+          <li class="nav-item">
+            <a href="/shophoatuoi/backend/hinhsanpham/create.php">Thêm mới</a>
+          </li>
+        </ul>
+      </li>
+      <!-- End Hình sản phẩm -->
       <!-- #################### End Menu chức năng Danh mục #################### -->
     </ul>
   </div>

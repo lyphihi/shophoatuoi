@@ -11,7 +11,7 @@ if (session_id() === '') {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NenTang.vn</title>
+  <title>Shophoatuoi</title>
   <!-- Nhúng file Quản lý các Liên kết CSS dùng chung cho toàn bộ trang web -->
   <?php include_once(__DIR__ . '/layouts/styles.php'); ?>
 </head>

@@ -2,10 +2,10 @@
   <h3>Danh sách</h3>
     <ul class="list-group">
       <li class="list-group-item list-group-item-primary"><a href="/shophoatuoi/frontend/loaihoa/camtucau.php">Hoa cẩm tú cầu</a></li>
-      <li class="list-group-item list-group-item-secondary"><a href="/shophoatuoi/frontend/loaihoa/camtucau.php">Hoa cúc</a></li>
+      <li class="list-group-item list-group-item-secondary"><a href="/shophoatuoi/frontend/loaihoa/hoacuc.php">Hoa cúc</a></li>
       <li class="list-group-item list-group-item-success"><a href="/shophoatuoi/frontend/loaihoa/hoahong.php">Hoa hồng</a></li>
-      <li class="list-group-item list-group-item-info"><a href="/shophoatuoi/frontend/loaihoa/hoahong.php">Hoa hướng dương</a></li>
-      <li class="list-group-item list-group-item-warning"><a href="/shophoatuoi/frontend/loaihoa/hoahong.php">Hoa lan</a></li>
+      <li class="list-group-item list-group-item-info"><a href="/shophoatuoi/frontend/loaihoa/hoaly.php">Hoa ly</a></li>
+      <li class="list-group-item list-group-item-warning"><a href="/shophoatuoi/frontend/loaihoa/cacloaikhac.php">Các loại hoa khác</a></li>
     </ul>
 </div>
 <?php 

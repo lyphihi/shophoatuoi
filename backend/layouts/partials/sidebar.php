@@ -78,6 +78,18 @@
         </ul>
       </li>
       <!-- End Chủ đề sản phẩm -->
+      <!-- Menu Chủ đề sản phẩm-->
+      <li class="nav-item">
+        <a href="#chudesanphamSubMenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+          Đơn đặt hàng
+        </a>
+        <ul class="collapse" id="chudesanphamSubMenu">
+          <li class="nav-item">
+            <a href="/shophoatuoi/backend/dondathang/index.php">Danh sách</a>
+          </li>
+        </ul>
+      </li>
+      <!-- End Chủ đề sản phẩm -->
       <!-- #################### End Menu chức năng Danh mục #################### -->
     </ul>
   </div>
